@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página Responsiva com Imagens Empilhadas</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body{
+          background-color: black;
+          display: flex;
+          flex-direction: column;
+          max-width: 100%;
+          align-items: center;
+          padding: 50px;
+        }
+        .image-container {
+            margin-top: 20px;
+            border-radius: 32px;
+            display: inline-block;
+            position: relative;
+        }
+        .image-container .img-fluid{
+            transition: tranform 0.3 ease-in-out;
+        }
+        .image-container:hover{
+            transform: scale(1.2)
+        }
+        h5{
+            color: whitesmoke;
+            white-space: nowrap;
+            overflow: hidden;   
+        }
+        .img-fluid{
+            height: 100%;;
+        }
+        h6{
+            color: whitesmoke;
+        }
+        .col-12{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 32px;
+        }
+    </style>
+</head>
+<body>
+    <h5>O que você deseja ?</h5>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h6>Ume</h6>
+                <div class="image-container">
+                    <a href="https://menu-restaurante-weld.vercel.app/">
+                    <img src="https://guiaauto.com.br/wp-content/uploads/2022/04/320i-3.jpg" class="img-fluid">
+                </a>
+                
+                </div>
+            </div>
+            <div class="col-12">
+                <h6>Merce</h6>
+                <div class="image-container">
+                    <a href="https://menu-restaurante-weld.vercel.app/"></a>
+                    <img src="https://guiaauto.com.br/wp-content/uploads/2022/04/320i-3.jpg" class="img-fluid">
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
